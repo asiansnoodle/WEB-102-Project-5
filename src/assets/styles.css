@@ -100,6 +100,67 @@ body {
     margin: 5px;
 }
 
-  .anime-card:hover {
+.anime-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+}
+
+/* .anime-info-container{
+  margin: 10px;
+  padding: 10px;
+  background-color: bisque;
+}
+
+.anime-info-table{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+} */
+
+.anime-info-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.anime-info-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  max-width: 900px;
+}
+
+.anime-info-image img {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.anime-info-details {
+  flex: 1;
+}
+
+.anime-info-details h1 {
+  margin-bottom: 1rem;
+}
+
+.anime-info-details p {
+  margin: 0.5rem 0;
+}
+
+.view-more-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #4f46e5; /* indigo-600 */
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.view-more-link:hover {
+  background-color: #4338ca; /* indigo-700 */
+}
+

@@ -50,7 +50,7 @@ const App = () => {
 
   return(
     <div className='app'>
-      <Header/>
+      {/* <Header/> */}
       <SearchBar onSearch={handleSearch}/>
       <SummaryStats animeList={animeList}/>
       {animeList ? <Animes animeList={animeList}/> : <h2>Loading Anime...</h2>}

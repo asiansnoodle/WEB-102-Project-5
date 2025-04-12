@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 import { useState, useEffect } from "react";
 import AnimeCard from "./AnimeCard";
 
@@ -8,7 +9,7 @@ const Animes = ({ animeList }) => {
         return (
             <div className="anime-container">
                 {
-                animeList.map(anime => <AnimeCard key={anime.mal_id} img={anime.images.jpg.image_url} animeTitle={anime.title} genre={anime.genres} startDay= {anime.aired.prop.from.day} startMonth={anime.aired.prop.from.month} startYear={anime.aired.prop.from.year} />)
+                animeList.map(anime =>  <AnimeCard key={anime.mal_id} img={anime.images.jpg.image_url} animeTitle={anime.title} genre={anime.genres} startDay= {anime.aired.prop.from.day} startMonth={anime.aired.prop.from.month} startYear={anime.aired.prop.from.year} mal_id={anime.mal_id} /> )
                 }
             </div>
         )
